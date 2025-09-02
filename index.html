@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CubeBot - Smart Robot</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #fdfdfd;
+    }
+    header {
+      background: url('foto robot.png') no-repeat center center/cover;
+      color: #fff;
+      padding: 100px 20px;
+      text-align: center;
+      position: relative;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: url('wave.svg') no-repeat center bottom;
+      background-size: cover;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    }
+    header p {
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+    }
+
+    /* Problem Section */
+    .problems {
+      background: #0a2540;
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .problems h2 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+    .timeline {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .step {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+    }
+    .circle {
+      background: #ff6f61;
+      color: #fff;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      margin-right: 15px;
+      flex-shrink: 0;
+    }
+    .solution {
+      margin-top: 40px;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+
+    /* Features */
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .features {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .feature {
+      flex: 1 1 250px;
+      background: #fff;
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+    .feature-icon {
+      font-size: 40px;
+      margin-bottom: 15px;
+      background: #ff6f61;
+      color: #fff;
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    /* Produk Section */
+    #produk {
+      background: #f3f8ff;
+    }
+    .produk-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .produk {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 260px;
+      transition: 0.3s ease;
+    }
+    .produk:hover {
+      transform: scale(1.05);
+    }
+    .produk img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    /* CTA */
+    .bottom-cta {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .btn {
+      padding: 14px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #fff;
+      margin: 10px;
+      display: inline-block;
+      transition: 0.3s ease;
+    }
+    .btn-beli {
+      background: #ff6f61;
+    }
+    .btn-wa {
+      background: #28a745;
+    }
+    .btn:hover {
+      opacity: 0.9;
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      background: #0a2540;
+      color: #fff;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header>
+    <h1>CubeBot</h1>
+    <p><strong>CubeBot – All-in-One Kit untuk melatih motorik, kreativitas, dan logika anak</strong></p>
+  </header>
+
+  <!-- Problem Section -->
+  <section class="problems">
+    <h2>Permasalahan apa sih yang sering terjadi?</h2>
+    <div class="timeline">
+      <div class="step">
+        <div class="circle">1</div>
+        <p>Kecanduan gadget & pasif
+                → Anak-anak banyak yang main HP, jadi kurang motorik, kurang kreatif.📱</p>
+      </div>
+      <div class="step">
+        <div class="circle">2</div>
+        <p>Ngoding itu ribet buat anak
+                → Coding biasanya dianggap sulit & membosankan kalau langsung dikasih yang advance.😵‍💫</p>
+      </div>
+      <div class="step">
+        <div class="circle">3</div>
+        <p>Robot lain mahal
+                → Kit robotik lain biasanya cuma 1 fungsi (misal hanya line follower), tapi harganya udah tinggi.💸</p>
+      </div>
+      <div class="step">
+        <div class="circle">4</div>
+        <p>Kurang edukasi kreatif
+                → Banyak mainan cuma bikin anak senang sebentar, tapi gak ngasih skill baru (kayak logika, problem solving, teamwork).🔧</p>
+      </div>
+    </div>
+    <div class="solution">
+      <p><strong>Nah, CubeBot jadi jawabannya 🚀</strong></p>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section>
+  <h2>Kenapa Harus CubeBot?</h2>
+  <div class="features">
+    
+    <div class="feature">
+      <div class="feature-icon">📱❌</div>
+      <h3>Alihkan dari gadget ke dunia robotik aktif</h3>
+      <p>Dengan CubeBot, mereka diajak aktif bergerak, ngerakit, dan ngoprek robot beneran</p>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon">👩‍💻💡</div>
+      <h3>Coding jadi mudah & fun</h3>
+      <p>CubeBot bikin ngoding jadi fun – mulai dari plug & play, lalu bisa belajar coding visual step by step.
+        Karena CubeBot bisa diprogram dengan cara mudah lewat coding visual berbasis block, cocok untuk anak anak.</p>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon">📦🤖</div>
+      <h3>All-in-One Robot Kit</h3>
+      <p>CubeBot itu all-in-one: dari line follower, forklift, sampai transporter, semua ada dalam satu kotak pintar dengan harga lebih hemat.</p>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon">🛠️🕹️</div>
+      <h3>Asah motorik & kreativitas anak</h3>
+      <p>Dari merakit hingga bereksperimen, CubeBot bikin anak aktif bergerak, berpikir, sekaligus berkreasi.</p>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon">🎉✨</div>
+      <h3>Belajar sambil seru-seruan</h3>
+      <p>CubeBot bukan cuma mainan. Dia adalah teman belajar teamwork, problem solving, dan kreativitas tanpa batas.</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Produk Section -->
+  <section id="produk">
+    <h2>Produk 3-in-1 CubeBot</h2>
+    <div class="produk-container">
+      <div class="produk">
+        <img src="stater.jpg" alt="CubeBot Starter">
+        <h3>CubeBot Starter</h3>
+        <p>Paket dasar untuk anak yang baru mulai belajar robotik.</p>
+      </div>
+      <div class="produk">
+        <img src="forklift2.jpg" alt="CubeBot Mode forklift">
+        <h3>CubeBot Mode forklift</h3>
+        <p>CubeBot dengan mode forklift yakni mengangkat dan memindahkan benda</p>
+      </div>
+      <div class="produk">
+        <img src="transpoter2.jpg" alt="CubeBot Mode transpoter">
+        <h3>CubeBot Mode transpoter</h3>
+        <p>CubeBot dengan mode trasnpoter yakni memindahkan benda dengan cara menjepitnya</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="bottom-cta">
+    <a href="https://wa.me/6287852861243" class="btn btn-wa">💬 Tanya via WhatsApp</a>
+  </div>
+
+  <!-- Sosial Media -->
+  <section id="sosmed">
+    <h2>Ikuti Aktivitas Kami</h2>
+    <p>Lihat keseruan CubeBot di Instagram & TikTok 🚀</p>
+    <div class="bottom-cta">
+      <a href="https://www.instagram.com/pkmk_cubebot?igsh=MTJ1dDMwZmZzY281dw==" class="btn btn-beli">📷 Instagram</a>
+      <a href="https://www.tiktok.com/@cubebot.pkm2025?_t=ZS-8zM6TMioAsR&_r=1" class="btn btn-beli" style="background:#000;">🎵 TikTok</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 CubeBot. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
