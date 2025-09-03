@@ -2,6 +2,8 @@
 <html lang="id">
 <head>
   <meta name="google-site-verification" content="w1DPwz1tgS_HoCQxxDAMg4AHs7zGZ0CBFkwut-CNfCE" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CubeBot - Smart Robot</title>
@@ -176,6 +178,21 @@
       padding: 25px;
       margin-top: 40px;
     }
+    /* Swiper Slide */
+.swiper-slide {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
   </style>
 </head>
 <body>
@@ -251,6 +268,24 @@
       <h3>Belajar sambil seru-seruan</h3>
       <p>CubeBot bukan cuma mainan. Dia adalah teman belajar teamwork, problem solving, dan kreativitas tanpa batas.</p>
     </div>
+
+    <div class="feature">
+      <div class="feature-icon">🧸💚</div>
+      <h3>Aman & Ramah Anak</h3>
+      <p>CubeBot dibuat dari bahan yang aman, ringan, dan tidak berbahaya, sehingga nyaman digunakan anak-anak.</p>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon">📖👨‍👩‍👧</div>
+      <h3>Buku Panduan Interaktif</h3>
+      <p>Dilengkapi guide book yang membantu anak belajar secara mandiri dengan pendampingan orang tua, membuat proses belajar lebih terarah.</p>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon">🔬📚</div>
+      <h3>Belajar STEM Secara Menyeluruh</h3>
+      <p>CubeBot mengajarkan Science, Technology, Engineering, dan Math, sekaligus melatih aspek kognitif, psikomotorik, dan afektif anak.</p>
+    </div>
   </div>
 </section>
 
@@ -277,6 +312,47 @@
     </div>
   </section>
 
+    <!-- Parts Section (Slider) -->
+<section id="parts" style="background:#fff8f0; padding:60px 20px;">
+  <h2 style="text-align:center;">Part Modular CubeBot</h2>
+  <p style="text-align:center;">Semua part CubeBot bisa dipasang-lepas sesuai mode 🤖</p>
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <img src="forklift.jpg" alt="Forklift Module">
+        <h3>Forklift Module 🏗️</h3>
+        <p>Alat kecil yang membantu mengangkat & memindahkan benda.</p>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="transpoter.jpg" alt="Transporter Module">
+        <h3>Transporter Module 🚚</h3>
+        <p>Part penjepit modular untuk membawa benda ringan.</p>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="line_follower.jpg" alt="Line Follower">
+        <h3>Line Follower ⚫⚪</h3>
+        <p>Sensor untuk mengikuti jalur garis.</p>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="basic.jpg" alt="Controller & Baterai">
+        <h3>Controller & Baterai 🔋</h3>
+        <p>Unit utama CubeBot dengan microkontroller Arduino dilengkapi dengan baterai isi ulang dan motor DC sebagai penggerak.</p>
+      </div>
+
+    </div>
+
+    <!-- Navigasi -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
+
   <!-- CTA -->
   <div class="bottom-cta">
     <a href="https://wa.me/6287852861243" class="btn btn-wa">💬 Tanya via WhatsApp</a>
@@ -296,6 +372,28 @@
   <footer>
     <p>&copy; 2025 CubeBot. All rights reserved.</p>
   </footer>
+  <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      320: { slidesPerView: 1 },   // HP
+      768: { slidesPerView: 2 },   // Tablet
+      1024: { slidesPerView: 3 },  // Laptop
+    }
+  });
+</script>
 
 </body>
 </html>
